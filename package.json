@@ -1,0 +1,22 @@
+{
+  "name": "learnsphere",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "wp-env start --xdebug",
+    "stop": "wp-env stop",
+    "wp-env": "wp-env",
+    "create-block": "mkdir -p wp-content/plugins/learnsphere-plugin/src/blocks && cd wp-content/plugins/learnsphere-plugin/src/blocks && npx @wordpress/create-block@latest --namespace=learnsphere-plugin --no-wp-scripts --no-plugin",
+    "build": "wp-scripts build",
+    "validate": "node scripts/validate-theme-json.mjs && node scripts/validate-fse-parts.mjs && node scripts/validate-theme-scss.mjs",
+    "watch": "wp-scripts start",
+    "package": "mkdir -p deliverables && npm run package:theme && npm run package:plugin",
+    "package:theme": "cd wp-content/themes && zip -r ../../deliverables/twenty-learnsphere-child.zip twenty-learnsphere-child -x 'twenty-learnsphere-child/src/*' 'twenty-learnsphere-child/src/**/*'",
+    "package:plugin": "cd wp-content/plugins && zip -r ../../deliverables/learnsphere-plugin.zip learnsphere-plugin -x 'learnsphere-plugin/src/*' 'learnsphere-plugin/src/**/*'"
+  },
+  "author": "Epitech",
+  "description": "LearnSphere",
+  "devDependencies": {
+    "@wordpress/env": "^10.24.0",
+    "@wordpress/scripts": "^30.24.0"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "version": "1.0.0",
+  "plugin": "openfields",
+  "fieldsets": [
+    {
+      "version": "0.4.2",
+      "exported": "2026-04-23 22:29:42",
+      "fieldset": {
+        "title": "Quiz",
+        "field_key": "ls_quiz",
+        "description": "",
+        "status": "active",
+        "custom_css": "",
+        "settings": [],
+        "menu_order": "0",
+        "fields": [
+          {
+            "id": "13",
+            "fieldset_id": "2",
+            "parent_id": null,
+            "label": "Questions",
+            "name": "ls_quiz_questions",
+            "field_key": "field_69ea946289fc6",
+            "type": "repeater",
+            "instructions": "",
+            "required": "0",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": "",
+            "wrapper_config": "",
+            "field_config": {
+              "layout": "block",
+              "min": 1,
+              "max": 5,
+              "button_label": "Add Questions"
+            },
+            "menu_order": "0",
+            "created_at": "2026-04-23 21:51:30",
+            "updated_at": "2026-04-23 22:07:11"
+          },
+          {
+            "id": "16",
+            "fieldset_id": "2",
+            "parent_id": "13",
+            "label": "Texte de la question",
+            "name": "question_text",
+            "field_key": "field_69ea980f1c3a8",
+            "type": "textarea",
+            "instructions": "",
+            "required": "1",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": [],
+            "wrapper_config": [],
+            "field_config": [],
+            "menu_order": "0",
+            "created_at": "2026-04-23 22:07:11",
+            "updated_at": "2026-04-23 22:07:11"
+          },
+          {
+            "id": "19",
+            "fieldset_id": "2",
+            "parent_id": "18",
+            "label": "Texte de la réponse",
+            "name": "answer_text",
+            "field_key": "field_69ea980f4cb03",
+            "type": "text",
+            "instructions": "",
+            "required": "1",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": [],
+            "wrapper_config": [],
+            "field_config": [],
+            "menu_order": "0",
+            "created_at": "2026-04-23 22:07:11",
+            "updated_at": "2026-04-23 22:07:11"
+          },
+          {
+            "id": "17",
+            "fieldset_id": "2",
+            "parent_id": "13",
+            "label": "Image (optionnelle)",
+            "name": "question_image",
+            "field_key": "field_69ea980f27b1f",
+            "type": "image",
+            "instructions": "",
+            "required": "0",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": [],
+            "wrapper_config": [],
+            "field_config": [],
+            "menu_order": "1",
+            "created_at": "2026-04-23 22:07:11",
+            "updated_at": "2026-04-23 22:07:11"
+          },
+          {
+            "id": "20",
+            "fieldset_id": "2",
+            "parent_id": "18",
+            "label": "Bonne réponse",
+            "name": "answer_is_correct",
+            "field_key": "field_69ea980f58cba",
+            "type": "switch",
+            "instructions": "",
+            "required": "1",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": [],
+            "wrapper_config": [],
+            "field_config": [],
+            "menu_order": "1",
+            "created_at": "2026-04-23 22:07:11",
+            "updated_at": "2026-04-23 22:07:11"
+          },
+          {
+            "id": "18",
+            "fieldset_id": "2",
+            "parent_id": "13",
+            "label": "Réponses",
+            "name": "question_answers",
+            "field_key": "field_69ea980f32034",
+            "type": "repeater",
+            "instructions": "",
+            "required": "1",
+            "default_value": "",
+            "placeholder": "",
+            "conditional_logic": [],
+            "wrapper_config": [],
+            "field_config": {
+              "min": 2,
+              "max": 5,
+              "layout": "block",
+              "button_label": "Add Response"
+            },
+            "menu_order": "2",
+            "created_at": "2026-04-23 22:07:11",
+            "updated_at": "2026-04-23 22:07:11"
+          }
+        ],
+        "locations": [
+          {
+            "id": "4",
+            "fieldset_id": "2",
+            "param": "post_type",
+            "operator": "==",
+            "value": "quiz",
+            "group_id": "0"
+          }
+        ]
+      }
+    }
+  ],
+  "exported_at": "2026-04-23T22:29:42.566Z"
+}
